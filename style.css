@@ -7,19 +7,27 @@ body{
     font-family: 'Merriweather', serif;
     background-color: #ebf2ff;
 }
+.button__primary{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%, 
+        #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+}
 .navbar{
     display:flex;
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
 }
-.navbar__brand{
-    width: 100px;
-}
-.navbar__logo{
-    width: 100%;
-}
-.nav__item{
+.navbar__item{
     background-image: linear-gradient(
         to right,
         #ff512f 0%,
@@ -32,21 +40,72 @@ body{
     border-radius: 6px;
     cursor: pointer;
 }
+.navbar__brand{
+    width: 100px;
+}
+.navbar__logo{
+    width: 100%;
+}
 .nav__item:hover{
     border: 2px solid blue;
 }
-@media (min-width: 768px){
+@media (min-width: 768px){             /*media query of tablet*/
     .navbar{
         justify-content: space-between;
         padding: 2px 30px;
     }
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
-@media (min-width: 1020px){
+@media (min-width: 1020px){             /*media query of laptop*/
+    .container{
+        max-width: 900px;
+    }
     .navbar__brand{
         width: 150px;
     }
-    .nav__item{
+    .button__primary{
         padding: 20px;
         font-size: 20px;
     }
+    .hero__description{
+       width: 100%;
+    }
+    .hero__text{
+        font-size: 50px;
+        padding-top: 150px;
+    }
+}
+.hero__image__container{
+    width: 100%;
+}
+.hero__text{
+    font-size:30px;
+    margin:20px 0;
+}
+.hero__image{
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.container{
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 1250px;
+    }
+}
+.pink__image{
+    position: absolute;
+}
+
+.pink__image__under{
+    position: absolute;
 }
