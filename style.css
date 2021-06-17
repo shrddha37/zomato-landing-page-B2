@@ -49,6 +49,13 @@ body{
 .nav__item:hover{
     border: 2px solid blue;
 }
+.food__card__image__container{
+    width: 100%;
+}
+.food__image{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
 @media (min-width: 768px){             /*media query of tablet*/
     .navbar{
         justify-content: space-between;
@@ -108,4 +115,18 @@ body{
 
 .pink__image__under{
     position: absolute;
+}
+.food__card{
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.food__card__description{
+    padding: 15px;
+}
+.explore__menu__text{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
 }
