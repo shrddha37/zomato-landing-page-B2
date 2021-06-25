@@ -55,6 +55,16 @@ body{
     opacity: 1;
     right: 0;
   } 
+  .hamburger__menu > div {
+    width: 35px;
+    height: 5px;
+    background-color: #f9fafc;
+    margin: 6px 0;
+  }
+  
+  .hamburger__menu__close {
+    display: none !important;
+  }
   /*flexxxx*/
   .restaurant__images__container{
       width: 100%;
@@ -208,6 +218,25 @@ footer > ul > li{
         margin-top: 40px;
         padding: 0 30px;
     }
+    .food__menu__card__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+      }
+      .food__menu__card {
+        flex-basis: 30%;
+        background-color: #fff;
+        border-radius: 6px;
+      }
+    
+      .food__menu__card__move__up {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+      }
+      .food__list__view__more {
+        background: none;
+      }
     .restaurant__text
     {
         width: 100%;
